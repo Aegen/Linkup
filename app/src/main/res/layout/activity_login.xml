@@ -13,14 +13,14 @@
         android:id="@+id/textView2"
         android:layout_marginTop="121dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText3" />
+        android:layout_alignStart="@+id/loginPasswordField" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editText"
-        android:hint="Your Name Here"
+        android:id="@+id/loginUsernameField"
+        android:hint="Username"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp" />
@@ -30,35 +30,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/loginUsernameField"
+        android:layout_alignStart="@+id/loginUsernameField"
         android:layout_marginTop="11dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/loginPasswordField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPassword"
         android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignStart="@+id/loginUsernameField"
         android:hint="********"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Login"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/loginPasswordField"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/newUserButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:text="New User" />
