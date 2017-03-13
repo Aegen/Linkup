@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="games">
+        <item>Betrayal at House on the Hill</item>
+        <item>Settlers of Catan</item>
+        <item>Carcassonne</item>
+        <item>Monopoly</item>
+        <item>Risk</item>
+        <item>Checkers</item>
+        <item>Chess</item>
+        <item>Pandemic</item>
+        <item>Takenoko</item>
+        <item>Tokaido</item>
+        <item>Dungeons and Dragons</item>
+        <item>Power Grid</item>
+        <item>Go</item>
+        <item>Dominos</item>
+        <item>Cards Against Humanity</item>
+        <item>Apples to Apples</item>
+        <item>Dead of Winter</item>
+        <item>Magic the Gathering</item>
+        <item>King of Tokyo</item>
+        <item>King of New York</item>
+        <item>Codenames</item>
+        <item>Love Letter</item>
+        <item>Diamonsters</item>
+        <item>The Castles of Burgundy</item>
+        <item>Five Tribes</item>
+        <item>Mice and Mystics</item>
+        <item>Summoner Wars</item>
+        <item>Dominion</item>
+        <item>Splendor</item>
+        <item>Coup</item>
+        <item>The Resistence</item>
+        <item>Zombie Dice</item>
+        <item>12 Days</item>
+        <item>Hanabi</item>
+        <item>Tsuro</item>
+        <item>Get Bit!</item>
+        <item>Munchkin</item>
+        <item>Ticket to Ride</item>
+        <item>Small World</item>
+        <item>Castle Panic</item>
+        <item>Fiasco</item>
+        <item>Gloom</item>
+        <item>Say Anything</item>
+        <item>Elder Sign</item>
+        <item>Arkham Horror</item>
+        <item>Eldritch Horror</item>
+        <item>Dixit</item>
+        <item>We Didn\'t Playtest this at all</item>
+        <item>Sushi Go</item>
+        <item>Wits and Wagers</item>
+        <item>Concept</item>
+        <item>Chez Geek</item>
+        <item>Dragon Age</item>
+        <item>Yahtzee</item>
+        <item>Fluxx</item>
+        <item>Star Fluxx</item>
+        <item>Last Night on Earth</item>
+        <item>Alhambra</item>
+        <item>7 Wonders</item>
+        <item>7 Wonders Duel</item>
+        <item>Twilight Struggle</item>
+        <item>Smash Up</item>
+        <item>Forbidden Island</item>
+        <item>Forbidden Desert</item>
+        <item>Formula D</item>
+        <item>Star Wars X-Wing</item>
+        <item>Tsuro of the Seas</item>
+        <item>Fortune and Glory</item>
+        <item>Lords of Waterdeep</item>
+        <item>Shadows over Camelot</item>
+        <item>Unspeakable Words</item>
+        <item>Qwirkle</item>
+        <item>Lords of Vegas</item>
+        <item>Stone Age</item>
+        <item>Sheriff of Nottingham</item>
+        <item>Epic Spell Wars</item>
+        <item>Hare &amp; Tortoise</item>
+        <item>Council of Verona</item>
+        <item>Geek Out!</item>
+        <item>Libertalia</item>
+        <item>Dread</item>
+        <item>Kingdom Builder</item>
+        <item>Legendary</item>
+        <item>Roll for it</item>
+        <item>Champions of Midgard</item>
+        <item>Lanterns</item>
+        <item>Scythe</item>
+        <item>Agricola</item>
+        <item>Monarch</item>
+        <item>Tiny Epic Galaxies</item>
+        <item>Fury of Dracula</item>
+        <item>Flash Point</item>
+        <item>Ghost Stories</item>
+        <item>Harbour</item>
+        <item>Dragon Farkle</item>
+        <item>Star Realms</item>
+        <item>Fate Core</item>
+        <item>Cosmic Encounters</item>
+        <item>Mysterium</item>
+        <item>Steam Park</item>
+        <item>Terra Mystica</item>
+        <item>Misspent Youth</item>
+        <item>Welcome to the Dungeon</item>
+        <item>KrosMaster: Arena</item>
+        <item>Tanto Cuore</item>
+        <item>Rampage</item>
+        <item>Mansions of Madness</item>
+        <item>Race for the Galaxy</item>
+        <item>Patchwork</item>
+        <item>Legendary Encounters</item>
+        <item>Chaos in the Old World</item>
+        <item>Risk Legacy</item>
+        <item>Pandemic Legacy</item>
+        <item>Camel Up</item>
+        <item>Pandemic: On the Brink</item>
+        <item>Pandemic: State of Emergency</item>
+        <item>Pandemic: In the Lab</item>
+        <item>Blood Rage</item>
+        <item>Takenoko: Chibis</item>
+        <item>Trickerion</item>
+        <item>A Game of Thrones</item>
+
+    </string-array>
+</resources>

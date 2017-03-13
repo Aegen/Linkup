@@ -1,25 +1,31 @@
 package com.example.aegis.linkup;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 
 public class NewUserActivityTwo extends AppCompatActivity {
 
 
-    private AutoCompleteTextView Howard;
+    private Button NextButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_user_two);
 
-        //Howard = (AutoCompleteTextView)findViewById(R.id.autoCompleteTextView);
+        NextButton = (Button)findViewById(R.id.button);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, new String[]{"Betrayal at House on the Hill", "Catan","Carcassonne", "Dead of Winter"});
-
-
+        NextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToGames = new Intent(NewUserActivityTwo.this, AddGamesActivity.class);
+                startActivity(goToGames);
+            }
+        });
 
     }
 }
