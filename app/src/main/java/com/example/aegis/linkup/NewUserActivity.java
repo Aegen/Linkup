@@ -1,5 +1,6 @@
 package com.example.aegis.linkup;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +31,9 @@ public class NewUserActivity extends AppCompatActivity {
         NextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Not Yet Implemented", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Not Yet Implemented", Toast.LENGTH_SHORT).show();
+                Intent goToNext = new Intent(NewUserActivity.this, NewUserActivityTwo.class);
+                startActivity(goToNext);
             }
         });
 
