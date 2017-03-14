@@ -27,7 +27,8 @@
         <activity android:name=".SettingsActivityTwo" />
         <activity android:name=".ChooseGameActivity" />
         <activity android:name=".PresentMatchActivity" />
-        <activity android:name=".SuccessfulMatchActivity"></activity>
+        <activity android:name=".SuccessfulMatchActivity" />
+        <activity android:name=".GroupMemberOptionsActivity"></activity>
     </application>
 
 </manifest>

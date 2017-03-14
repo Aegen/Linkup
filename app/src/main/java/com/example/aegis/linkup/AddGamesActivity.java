@@ -35,6 +35,8 @@ public class AddGamesActivity extends AppCompatActivity {
         AddButton = (Button)findViewById(R.id.button2);
         LView = (ListView)findViewById(R.id.listView);
 
+        //Bundle outer = getIntent().getExtras();
+
         Name = getIntent().getStringExtra("name");
         Location = getIntent().getStringExtra("location");
         Age = getIntent().getStringExtra("age");

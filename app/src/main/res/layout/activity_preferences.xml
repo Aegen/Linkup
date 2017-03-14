@@ -109,15 +109,17 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/seekBar4"
         android:layout_toStartOf="@+id/seekBar4"
-        android:text="I'm Not" />
+        android:text="I'm Not"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Very"
         android:layout_alignBottom="@+id/seekBar4"
-        android:layout_toEndOf="@+id/seekBar4" />
+        android:layout_toEndOf="@+id/seekBar4"
+        android:text="Very"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView19"
@@ -144,17 +146,19 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rarely"
         android:layout_alignBottom="@+id/seekBar5"
-        android:layout_toStartOf="@+id/seekBar5" />
+        android:layout_toStartOf="@+id/seekBar5"
+        android:text="Rarely"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Often"
         android:layout_alignBottom="@+id/seekBar5"
-        android:layout_toEndOf="@+id/seekBar5" />
+        android:layout_toEndOf="@+id/seekBar5"
+        android:text="Often"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView22"
@@ -183,7 +187,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/seekBar6"
         android:layout_toStartOf="@+id/seekBar6"
-        android:text="Rarely" />
+        android:text="Rarely"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView24"
@@ -191,7 +196,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/seekBar6"
         android:layout_toEndOf="@+id/seekBar6"
-        android:text="Often" />
+        android:text="Often"
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/button3"

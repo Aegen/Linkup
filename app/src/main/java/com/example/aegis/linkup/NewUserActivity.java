@@ -28,11 +28,17 @@ public class NewUserActivity extends AppCompatActivity {
         PasswordField = (EditText)findViewById(R.id.newUserPasswordField);
         ConfirmPasswordField = (EditText)findViewById(R.id.newUserConfirmPasswordField);
 
+
+
         NextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), "Not Yet Implemented", Toast.LENGTH_SHORT).show();
                 Intent goToNext = new Intent(NewUserActivity.this, NewUserActivityTwo.class);
+
+                //goToNext.putExtra("username", UsernameField.getText().toString());
+                //goToNext.putExtra("password", PasswordField.getText().toString());
+
                 startActivity(goToNext);
             }
         });
