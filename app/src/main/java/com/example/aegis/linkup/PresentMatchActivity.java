@@ -36,7 +36,7 @@ public class PresentMatchActivity extends AppCompatActivity {
 
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
-        LocationField.setText("Location: " + sharedPref.getString("location", "erro"));
+        LocationField.setText("Location: " + sharedPref.getString("location", "error"));
 
 
         YesButton.setOnClickListener(new View.OnClickListener() {

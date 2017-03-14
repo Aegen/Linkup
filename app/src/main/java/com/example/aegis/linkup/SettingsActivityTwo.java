@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SettingsActivityTwo extends AppCompatActivity {
 
@@ -15,6 +16,8 @@ public class SettingsActivityTwo extends AppCompatActivity {
     private String[] Games;
 
     private Button YesButton;
+    private Button GroupOneButton;
+    private Button TeamRocketButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,8 @@ public class SettingsActivityTwo extends AppCompatActivity {
 
         YesButton = (Button)findViewById(R.id.button7);
 
+        TeamRocketButton = (Button)findViewById(R.id.button6);
+
         YesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +44,20 @@ public class SettingsActivityTwo extends AppCompatActivity {
 //                hello.putExtra("description", Description);
 //                hello.putExtra("games", Games);
                 startActivity(hello);
+            }
+        });
+
+        TeamRocketButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Not Available", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        GroupOneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Not Available", Toast.LENGTH_SHORT).show();
             }
         });
     }
