@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.aegis.linkup.SettingsActivity">
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:text="Manage Group Profiles"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:text="Manage Profile"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="78dp" />
 </android.support.constraint.ConstraintLayout>
