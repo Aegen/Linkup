@@ -23,11 +23,11 @@ public class PresentMatchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_present_match);
 
-        Games = getIntent().getStringArrayExtra("games");
-        Name = getIntent().getStringExtra("name");
-        Age = getIntent().getStringExtra("age");
-        Location = getIntent().getStringExtra("location");
-        Description = getIntent().getStringExtra("description");
+//        Games = getIntent().getStringArrayExtra("games");
+//        Name = getIntent().getStringExtra("name");
+//        Age = getIntent().getStringExtra("age");
+//        Location = getIntent().getStringExtra("location");
+//        Description = getIntent().getStringExtra("description");
 
         YesButton = (Button)findViewById(R.id.YesButton);
         LocationField = (TextView)findViewById(R.id.textView30);
@@ -39,11 +39,11 @@ public class PresentMatchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent hello = new Intent(PresentMatchActivity.this, SuccessfulMatchActivity.class);
-                hello.putExtra("name", Name);
-                hello.putExtra("location", Location);
-                hello.putExtra("age", Age);
-                hello.putExtra("description", Description);
-                hello.putExtra("games", Games);
+//                hello.putExtra("name", Name);
+//                hello.putExtra("location", Location);
+//                hello.putExtra("age", Age);
+//                hello.putExtra("description", Description);
+//                hello.putExtra("games", Games);
                 try {
                     Thread.sleep(2000);
                 }catch (InterruptedException e){

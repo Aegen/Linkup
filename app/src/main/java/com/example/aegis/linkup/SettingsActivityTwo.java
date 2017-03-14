@@ -21,11 +21,11 @@ public class SettingsActivityTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_two);
 
-        Games = getIntent().getStringArrayExtra("games");
-        Name = getIntent().getStringExtra("name");
-        Age = getIntent().getStringExtra("age");
-        Location = getIntent().getStringExtra("location");
-        Description = getIntent().getStringExtra("description");
+//        Games = getIntent().getStringArrayExtra("games");
+//        Name = getIntent().getStringExtra("name");
+//        Age = getIntent().getStringExtra("age");
+//        Location = getIntent().getStringExtra("location");
+//        Description = getIntent().getStringExtra("description");
 
         YesButton = (Button)findViewById(R.id.button7);
 
@@ -33,11 +33,11 @@ public class SettingsActivityTwo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent hello = new Intent(SettingsActivityTwo.this, NewGroupActivity.class);
-                hello.putExtra("name", Name);
-                hello.putExtra("location", Location);
-                hello.putExtra("age", Age);
-                hello.putExtra("description", Description);
-                hello.putExtra("games", Games);
+//                hello.putExtra("name", Name);
+//                hello.putExtra("location", Location);
+//                hello.putExtra("age", Age);
+//                hello.putExtra("description", Description);
+//                hello.putExtra("games", Games);
                 startActivity(hello);
             }
         });

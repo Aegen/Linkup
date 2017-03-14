@@ -26,11 +26,11 @@ public class ChooseGameActivity extends AppCompatActivity {
         gameList = (ListView)findViewById(R.id.TheGameList);
 
 
-        Games = getIntent().getStringArrayExtra("games");
-        Name = getIntent().getStringExtra("name");
-        Age = getIntent().getStringExtra("age");
-        Location = getIntent().getStringExtra("location");
-        Description = getIntent().getStringExtra("description");
+//        Games = getIntent().getStringArrayExtra("games");
+//        Name = getIntent().getStringExtra("name");
+//        Age = getIntent().getStringExtra("age");
+//        Location = getIntent().getStringExtra("location");
+//        Description = getIntent().getStringExtra("description");
 
         ArrayAdapter<String> ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Games);
 
@@ -42,11 +42,11 @@ public class ChooseGameActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent hello = new Intent(ChooseGameActivity.this, PresentMatchActivity.class);
 
-                hello.putExtra("name", Name);
-                hello.putExtra("location", Location);
-                hello.putExtra("age", Age);
-                hello.putExtra("description", Description);
-                hello.putExtra("games", Games);
+//                hello.putExtra("name", Name);
+//                hello.putExtra("location", Location);
+//                hello.putExtra("age", Age);
+//                hello.putExtra("description", Description);
+//                hello.putExtra("games", Games);
                 startActivity(hello);
             }
         });

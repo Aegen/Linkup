@@ -1,7 +1,9 @@
 package com.example.aegis.linkup;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MainProfileActivity extends AppCompatActivity {
 
@@ -45,11 +49,11 @@ public class MainProfileActivity extends AppCompatActivity {
 
             }
 
-            hello.putExtra("name", Name);
-            hello.putExtra("location", Location);
-            hello.putExtra("age", Age);
-            hello.putExtra("description", Description);
-            hello.putExtra("games", Games);
+//            hello.putExtra("name", Name);
+//            hello.putExtra("location", Location);
+//            hello.putExtra("age", Age);
+//            hello.putExtra("description", Description);
+//            hello.putExtra("games", Games);
             startActivity(hello);
 
             return true;
@@ -69,11 +73,20 @@ public class MainProfileActivity extends AppCompatActivity {
         NameField = (TextView)findViewById(R.id.nameField);
         LocationField = (TextView)findViewById(R.id.locationField);
 
-        Games = getIntent().getStringArrayExtra("games");
-        Name = getIntent().getStringExtra("name");
-        Age = getIntent().getStringExtra("age");
-        Location = getIntent().getStringExtra("location");
-        Description = getIntent().getStringExtra("description");
+//        Games = getIntent().getStringArrayExtra("games");
+//        Name = getIntent().getStringExtra("name");
+//        Age = getIntent().getStringExtra("age");
+//        Location = getIntent().getStringExtra("location");
+//        Description = getIntent().getStringExtra("description");
+
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        Set<String> GamesSet = sharedPref.getStringSet("games",new HashSet<String>());
+        Games = GamesSet.toArray(new String[GamesSet.size()]);
+        Name = sharedPref.getString("name","error");
+        Age = sharedPref.getString("age","error");
+        Location = sharedPref.getString("location","error");
+        Description = sharedPref.getString("description","error");
+
 
         ArrayAdapter<String> ad = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Games);
         GamesList.setAdapter(ad);

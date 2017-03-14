@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 public class NewUserActivityTwo extends AppCompatActivity {
 
@@ -24,6 +26,7 @@ public class NewUserActivityTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_user_two);
 
+
         NextButton = (Button)findViewById(R.id.button);
         NameField = (EditText)findViewById(R.id.editText);
         AgeField = (EditText)findViewById(R.id.editText4);
@@ -33,11 +36,19 @@ public class NewUserActivityTwo extends AppCompatActivity {
         NextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("name",NameField.getText().toString());
+                editor.putString("age",AgeField.getText().toString());
+                editor.putString("description",DescriptionField.getText().toString());
+                editor.putString("location",LocationField.getText().toString());
+                editor.commit();
+
                 Intent goToGames = new Intent(NewUserActivityTwo.this, AddGamesActivity.class);
-                goToGames.putExtra("name", NameField.getText().toString());
-                goToGames.putExtra("age", AgeField.getText().toString());
-                goToGames.putExtra("description", DescriptionField.getText().toString());
-                goToGames.putExtra("location", LocationField.getText().toString());
+//                goToGames.putExtra("name", NameField.getText().toString());
+//                goToGames.putExtra("age", AgeField.getText().toString());
+//                goToGames.putExtra("description", DescriptionField.getText().toString());
+//                goToGames.putExtra("location", LocationField.getText().toString());
                 startActivity(goToGames);
             }
         });

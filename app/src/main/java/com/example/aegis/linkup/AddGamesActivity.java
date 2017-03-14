@@ -1,6 +1,8 @@
 package com.example.aegis.linkup;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +14,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class AddGamesActivity extends AppCompatActivity {
 
@@ -35,10 +38,10 @@ public class AddGamesActivity extends AppCompatActivity {
         AddButton = (Button)findViewById(R.id.button2);
         LView = (ListView)findViewById(R.id.listView);
 
-        Name = getIntent().getStringExtra("name");
-        Location = getIntent().getStringExtra("location");
-        Age = getIntent().getStringExtra("age");
-        Description = getIntent().getStringExtra("description");
+//        Name = getIntent().getStringExtra("name");
+//        Location = getIntent().getStringExtra("location");
+//        Age = getIntent().getStringExtra("age");
+//        Description = getIntent().getStringExtra("description");
 
         DoneButton = (Button)findViewById(R.id.ManageProfileButton);
 
@@ -71,13 +74,19 @@ public class AddGamesActivity extends AppCompatActivity {
                 if(listAdapter.getPosition("Pandemic")== -1) {
                     Games.add("Pandemic");
                 }
+
+                SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putStringSet("games",new HashSet<String>(Games));
+                editor.commit();
+
                 Intent i = new Intent(AddGamesActivity.this, MainProfileActivity.class);
-                i.putExtra("name", Name);
-                i.putExtra("age", Age);
-                i.putExtra("description", Description);
-                i.putExtra("location", Location);
-                Log.d("helo", Games.get(0));
-                i.putExtra("games", Games.toArray(new String[Games.size()]));
+//                i.putExtra("name", Name);
+//                i.putExtra("age", Age);
+//                i.putExtra("description", Description);
+//                i.putExtra("location", Location);
+//                Log.d("helo", Games.get(0));
+//                i.putExtra("games", Games.toArray(new String[Games.size()]));
                 startActivity(i);
             }
         });
