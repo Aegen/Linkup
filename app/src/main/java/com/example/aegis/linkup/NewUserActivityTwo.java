@@ -25,6 +25,7 @@ public class NewUserActivityTwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_user_two);
+        final Bundle outer = getIntent().getExtras();
 
 
         NextButton = (Button)findViewById(R.id.button);

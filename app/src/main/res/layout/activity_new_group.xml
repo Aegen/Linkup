@@ -124,9 +124,10 @@
         android:textSize="18sp" />
 
     <ListView
+        android:id="@+id/groupListView"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_below="@+id/button8"
-        android:layout_alignEnd="@+id/GroupName" />
+        android:layout_alignEnd="@+id/GroupName"
+        android:layout_below="@+id/button8" />
 
 </RelativeLayout>

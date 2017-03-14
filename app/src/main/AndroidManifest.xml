@@ -29,6 +29,6 @@
         <activity android:name=".PresentMatchActivity" />
         <activity android:name=".SuccessfulMatchActivity" />
         <activity android:name=".ManagePeople"></activity>
+        <activity android:name=".GroupMemberOptionsActivity"></activity>
     </application>
-
 </manifest>
