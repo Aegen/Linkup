@@ -13,7 +13,7 @@ public class SuccessfulMatchActivity extends AppCompatActivity {
     private String Age;
     private String Description;
     private String[] Games;
-//    private Match[] matches;
+//    private Match[] matches
 
     private Button YesButton;
 
