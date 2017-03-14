@@ -1,5 +1,6 @@
 package com.example.aegis.linkup;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class AddGamesActivity extends AppCompatActivity {
 
@@ -34,9 +39,19 @@ public class AddGamesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(listAdapter.getPosition(Howard.getText().toString()) == -1) {
+
+                    Intent a = new Intent(AddGamesActivity.this, PreferencesActivity.class);
+                    startActivity(a);
+
                     listAdapter.add(Howard.getText().toString());
                 }
             }
+
         });
+    }
+
+    @Override
+    public void onActivityResult(int one, int two, Intent data){
+        Toast.makeText(getApplicationContext(), data.getStringExtra("output"), Toast.LENGTH_LONG).show();
     }
 }
