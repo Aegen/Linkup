@@ -18,6 +18,7 @@ public class AddGamesActivity extends AppCompatActivity {
     private AutoCompleteTextView Howard;
     private Button AddButton;
     private ListView LView;
+    private Button DoneButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class AddGamesActivity extends AppCompatActivity {
         Howard = (AutoCompleteTextView)findViewById(R.id.autoCompleteTextView);
         AddButton = (Button)findViewById(R.id.button2);
         LView = (ListView)findViewById(R.id.listView);
+
+        DoneButton = (Button)findViewById(R.id.button4);
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.games));
@@ -47,6 +50,14 @@ public class AddGamesActivity extends AppCompatActivity {
                 }
             }
 
+        });
+
+        DoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AddGamesActivity.this, MainProfileActivity.class);
+                startActivity(i);
+            }
         });
     }
 

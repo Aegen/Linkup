@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Linkup</string>
+    <string name="title_activity_main_profile">MainProfileActivity</string>
+    <string name="title_home">Profile</string>
+    <string name="title_dashboard">Settings</string>
+    <string name="title_notifications">Find Players</string>
 </resources>

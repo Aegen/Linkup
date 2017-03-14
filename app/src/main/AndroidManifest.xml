@@ -18,7 +18,10 @@
         <activity android:name=".NewUserActivity" />
         <activity android:name=".NewUserActivityTwo" />
         <activity android:name=".AddGamesActivity" />
-        <activity android:name=".PreferencesActivity"></activity>
+        <activity android:name=".PreferencesActivity" />
+        <activity
+            android:name=".MainProfileActivity"
+            android:label="@string/title_activity_main_profile"></activity>
     </application>
 
 </manifest>
