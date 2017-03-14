@@ -38,7 +38,7 @@ public class MainProfileActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
 
-                    hello = new Intent(MainProfileActivity.this, MainProfileActivity.class);
+                    hello = new Intent(MainProfileActivity.this, ManagePeople.class);
                     break;
                 case R.id.navigation_dashboard:
                     hello = new Intent(MainProfileActivity.this, SettingsActivity.class);

@@ -31,10 +31,10 @@
             android:id="@+id/imageView2"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_alignStart="@+id/NameText"
-            android:layout_below="@+id/NameText"
             android:layout_marginTop="16dp"
-            app:srcCompat="@android:drawable/ic_lock_lock" />
+            app:srcCompat="@android:drawable/ic_lock_lock"
+            android:layout_below="@+id/NameText"
+            android:layout_alignStart="@+id/NameText" />
 
         <TextView
             android:id="@+id/textView11"
