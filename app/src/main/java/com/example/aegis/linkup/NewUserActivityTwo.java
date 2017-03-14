@@ -51,6 +51,7 @@ public class NewUserActivityTwo extends AppCompatActivity {
 //                goToGames.putExtra("description", DescriptionField.getText().toString());
 //                goToGames.putExtra("location", LocationField.getText().toString());
                 startActivity(goToGames);
+                finish();
             }
         });
 
