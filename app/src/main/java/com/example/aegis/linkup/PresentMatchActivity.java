@@ -1,6 +1,8 @@
 package com.example.aegis.linkup;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +34,9 @@ public class PresentMatchActivity extends AppCompatActivity {
         YesButton = (Button)findViewById(R.id.YesButton);
         LocationField = (TextView)findViewById(R.id.textView30);
 
-        LocationField.setText("Location: " + Location);
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
+        LocationField.setText("Location: " + sharedPref.getString("location", "erro"));
 
 
         YesButton.setOnClickListener(new View.OnClickListener() {

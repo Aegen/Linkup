@@ -1,12 +1,17 @@
 package com.example.aegis.linkup;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class ChooseGameActivity extends AppCompatActivity {
 
@@ -31,6 +36,10 @@ public class ChooseGameActivity extends AppCompatActivity {
 //        Age = getIntent().getStringExtra("age");
 //        Location = getIntent().getStringExtra("location");
 //        Description = getIntent().getStringExtra("description");
+
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        Set<String> GamesSet = sharedPref.getStringSet("games",new HashSet<String>());
+        Games = GamesSet.toArray(new String[GamesSet.size()]);
 
         ArrayAdapter<String> ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Games);
 
