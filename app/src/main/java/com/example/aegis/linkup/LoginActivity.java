@@ -28,7 +28,9 @@ public class LoginActivity extends AppCompatActivity {
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Not Implemented", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Not Implemented", Toast.LENGTH_SHORT).show();
+                Intent marx = new Intent(LoginActivity.this,OtherProfileActivity.class);
+                startActivity(marx);
             }
         });
 

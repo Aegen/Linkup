@@ -30,5 +30,6 @@
         <activity android:name=".SuccessfulMatchActivity" />
         <activity android:name=".ManagePeople"></activity>
         <activity android:name=".GroupMemberOptionsActivity"></activity>
+	<activity android:name=".OtherProfileActivity"></activity>
     </application>
 </manifest>
