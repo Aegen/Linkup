@@ -88,12 +88,13 @@ public class AddGamesActivity extends AppCompatActivity {
 //                Log.d("helo", Games.get(0));
 //                i.putExtra("games", Games.toArray(new String[Games.size()]));
                 startActivity(i);
+                finish();
             }
         });
     }
 
     @Override
     public void onActivityResult(int one, int two, Intent data){
-        Toast.makeText(getApplicationContext(), data.getStringExtra("output"), Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), data.getStringExtra("output"), Toast.LENGTH_LONG).show();
     }
 }

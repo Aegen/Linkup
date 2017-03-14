@@ -40,6 +40,7 @@ public class NewUserActivity extends AppCompatActivity {
                 //goToNext.putExtra("password", PasswordField.getText().toString());
 
                 startActivity(goToNext);
+                finish();
             }
         });
 
