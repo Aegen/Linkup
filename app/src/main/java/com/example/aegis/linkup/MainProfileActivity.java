@@ -9,9 +9,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -37,8 +37,7 @@ public class MainProfileActivity extends AppCompatActivity {
             Intent hello = new Intent(MainProfileActivity.this, MainProfileActivity.class);
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-
-                    hello = new Intent(MainProfileActivity.this, MainProfileActivity.class);
+                    hello = new Intent(MainProfileActivity.this, ManagePeople.class);
                     break;
                 case R.id.navigation_dashboard:
                     hello = new Intent(MainProfileActivity.this, SettingsActivity.class);
