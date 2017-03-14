@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.aegis.linkup.ManagePeople">
 
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Choose who to view"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
     <ListView
-        android:id="@+id/listview1"
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="8dp" />
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/namesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView37"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+</RelativeLayout>

@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -70,7 +71,7 @@ public class OtherProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_profile);
+        setContentView(R.layout.activity_other_profile);
 
         GamesList = (ListView)findViewById(R.id.gameList);
         DescriptionField = (TextView) findViewById(R.id.DescriptionField);
@@ -80,6 +81,8 @@ public class OtherProfileActivity extends AppCompatActivity {
 
         AddToGroupButton = (Button)findViewById(R.id.AddToGroupButton);
         BackToProfileButton = (Button)findViewById(R.id.BackToProfileButton);
+
+
 
         AddToGroupButton.setOnClickListener(new View.OnClickListener() {
             @Override

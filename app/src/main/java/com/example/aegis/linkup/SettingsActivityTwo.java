@@ -24,6 +24,8 @@ public class SettingsActivityTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_two);
 
+        Toast.makeText(getApplicationContext(), "here", Toast.LENGTH_SHORT).show();
+
 //        Games = getIntent().getStringArrayExtra("games");
 //        Name = getIntent().getStringExtra("name");
 //        Age = getIntent().getStringExtra("age");
@@ -33,6 +35,7 @@ public class SettingsActivityTwo extends AppCompatActivity {
         YesButton = (Button)findViewById(R.id.button7);
 
         TeamRocketButton = (Button)findViewById(R.id.button6);
+        GroupOneButton = (Button)findViewById(R.id.button5);
 
         YesButton.setOnClickListener(new View.OnClickListener() {
             @Override
