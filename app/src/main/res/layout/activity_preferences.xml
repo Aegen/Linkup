@@ -23,16 +23,7 @@
         android:layout_toStartOf="@+id/seekBar2"
         android:text="Casually" />
 
-    <SeekBar
-        android:id="@+id/seekBar3"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:max="4"
-        android:progress="2" />
+
 
     <TextView
         android:id="@+id/textView15"
@@ -96,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView13"
-        android:layout_below="@+id/seekBar3"
+        android:layout_below="@+id/seekBar2"
         android:layout_marginTop="25dp"
         android:text="How strict are you about rules?"
         android:textColor="@android:color/black" />
@@ -110,7 +101,7 @@
         android:max="4"
         android:progress="2"
         android:layout_below="@+id/textView16"
-        android:layout_alignStart="@+id/seekBar3" />
+        android:layout_alignStart="@+id/seekBar2" />
 
     <TextView
         android:id="@+id/textView17"
