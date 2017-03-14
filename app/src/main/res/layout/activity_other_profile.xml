@@ -86,9 +86,9 @@
             android:layout_alignStart="@+id/textView26"
             android:layout_below="@+id/textView26"
             android:ems="10"
-            android:maxLines="2"
+            android:inputType="textPersonName"
             android:lines="2"
-            android:inputType="textPersonName" />
+            android:maxLines="2" />
 
         <TextView
             android:id="@+id/AgeField"
@@ -128,14 +128,25 @@
             android:layout_alignStart="@+id/textView31"
             android:layout_below="@+id/textView31" />
 
+        <Button
+            android:id="@+id/AddToGroupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Group"
+            android:layout_below="@+id/gameList"
+            android:layout_toEndOf="@+id/textView25"
+            android:layout_marginTop="19dp" />
+
+        <Button
+            android:id="@+id/BackToProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_alignTop="@+id/AddToGroupButton"
+            android:layout_marginEnd="11dp"
+            android:text="Back to Profile" />
+
     </RelativeLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation" />
 
 </LinearLayout>

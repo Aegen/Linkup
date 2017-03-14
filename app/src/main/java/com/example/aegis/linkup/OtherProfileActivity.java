@@ -8,7 +8,9 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,7 +31,10 @@ public class OtherProfileActivity extends AppCompatActivity {
     private String Description;
     private String[] Games = {"Pandemic","Settler of Catan"};
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    private Button AddToGroupButton;
+    private Button BackToProfileButton;
+
+    /*private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -38,7 +43,7 @@ public class OtherProfileActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
 
-                    hello = new Intent(OtherProfileActivity.this, OtherProfileActivity.class);
+                    hello = new Intent(OtherProfileActivity.this, MainProfileActivity.class);
                     break;
                 case R.id.navigation_dashboard:
                     hello = new Intent(OtherProfileActivity.this, SettingsActivity.class);
@@ -60,7 +65,7 @@ public class OtherProfileActivity extends AppCompatActivity {
 
         }
 
-    };
+    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +78,24 @@ public class OtherProfileActivity extends AppCompatActivity {
         NameField = (TextView)findViewById(R.id.nameField);
         LocationField = (TextView)findViewById(R.id.locationField);
 
+        AddToGroupButton = (Button)findViewById(R.id.AddToGroupButton);
+        BackToProfileButton = (Button)findViewById(R.id.BackToProfileButton);
+
+        AddToGroupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(OtherProfileActivity.this, SettingsActivityTwo.class));
+            }
+        });
+
+        BackToProfileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(OtherProfileActivity.this, MainProfileActivity.class));
+            }
+        });
+
+
 //        Games = getIntent().getStringArrayExtra("games");
 //        Name = getIntent().getStringExtra("name");
 //        Age = getIntent().getStringExtra("age");
@@ -83,7 +106,7 @@ public class OtherProfileActivity extends AppCompatActivity {
         Set<String> GamesSet = sharedPref.getStringSet("games",new HashSet<String>());
         Name = "Henry";
         Age = "29";
-        Location = "Near you";
+        Location = sharedPref.getString("location", "error");
         Description = "I love board games with a passion.";
 
 
@@ -95,8 +118,8 @@ public class OtherProfileActivity extends AppCompatActivity {
         NameField.setText(Name);
         LocationField.setText(Location);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        /*BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);*/
     }
 
 }
