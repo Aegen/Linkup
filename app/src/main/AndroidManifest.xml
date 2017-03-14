@@ -21,7 +21,8 @@
         <activity android:name=".PreferencesActivity" />
         <activity
             android:name=".MainProfileActivity"
-            android:label="@string/title_activity_main_profile"></activity>
+            android:label="@string/title_activity_main_profile" />
+        <activity android:name=".ChooseGameActivity"></activity>
     </application>
 
 </manifest>
