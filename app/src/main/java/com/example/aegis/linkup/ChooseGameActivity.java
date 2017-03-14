@@ -25,9 +25,6 @@ public class ChooseGameActivity extends AppCompatActivity {
 
         gameList = (ListView)findViewById(R.id.TheGameList);
 
-        ArrayAdapter<String> ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, new String[]{"Pandemic"});
-
-        gameList.setAdapter(ad);
 
         Games = getIntent().getStringArrayExtra("games");
         Name = getIntent().getStringExtra("name");
@@ -35,10 +32,15 @@ public class ChooseGameActivity extends AppCompatActivity {
         Location = getIntent().getStringExtra("location");
         Description = getIntent().getStringExtra("description");
 
+        ArrayAdapter<String> ad = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Games);
+
+        gameList.setAdapter(ad);
+
+
         gameList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent hello = new Intent(ChooseGameActivity.this, MainProfileActivity.class);
+                Intent hello = new Intent(ChooseGameActivity.this, PresentMatchActivity.class);
 
                 hello.putExtra("name", Name);
                 hello.putExtra("location", Location);

@@ -24,9 +24,10 @@
             android:label="@string/title_activity_main_profile" />
         <activity android:name=".NewGroupActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".SettingsActivityTwo"></activity>
-        <activity android:name=".ChooseGameActivity"></activity>
-        <activity android:name=".PresentMatchActivity"></activity>
+        <activity android:name=".SettingsActivityTwo" />
+        <activity android:name=".ChooseGameActivity" />
+        <activity android:name=".PresentMatchActivity" />
+        <activity android:name=".SuccessfulMatchActivity"></activity>
     </application>
 
 </manifest>

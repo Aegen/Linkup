@@ -10,11 +10,84 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="52dp"
+        android:text="Name: Henry"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="33dp"
-        android:text="TextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView27"
+        android:layout_marginTop="12dp"
+        android:text="Age: 29"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="How about him?"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_below="@+id/textView28"
+        android:layout_marginTop="18dp"
+        android:text="Location: Near You"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="17dp"
+        android:text="Description: I love board games with a passion."
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView32"
+        android:layout_below="@+id/textView32"
+        android:layout_marginTop="16dp"
+        android:text="Favorite Games: Pandemic and Catan"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/YesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView28"
+        android:layout_below="@+id/textView33"
+        android:layout_marginTop="47dp"
+        android:text="Yes" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView33"
+        android:layout_alignTop="@+id/YesButton"
+        android:layout_marginEnd="13dp"
+        android:text="No" />
 </RelativeLayout>

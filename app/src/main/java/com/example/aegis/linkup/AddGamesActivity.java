@@ -11,9 +11,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class AddGamesActivity extends AppCompatActivity {
 
@@ -42,7 +40,7 @@ public class AddGamesActivity extends AppCompatActivity {
         Age = getIntent().getStringExtra("age");
         Description = getIntent().getStringExtra("description");
 
-        DoneButton = (Button)findViewById(R.id.button4);
+        DoneButton = (Button)findViewById(R.id.ManageProfileButton);
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.games));
@@ -70,6 +68,9 @@ public class AddGamesActivity extends AppCompatActivity {
         DoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(listAdapter.getPosition("Pandemic")== -1) {
+                    Games.add("Pandemic");
+                }
                 Intent i = new Intent(AddGamesActivity.this, MainProfileActivity.class);
                 i.putExtra("name", Name);
                 i.putExtra("age", Age);

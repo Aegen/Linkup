@@ -7,24 +7,24 @@
     tools:context="com.example.aegis.linkup.SettingsActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/ManageGroupProfilesButton"
         android:layout_width="198dp"
         android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ManageProfileButton"
+        android:layout_marginTop="23dp"
         android:text="Manage Group Profiles"
         tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="159dp"
-        android:layout_marginTop="23dp"
-        android:layout_below="@+id/button4"
-        android:layout_alignParentStart="true" />
+        tools:layout_editor_absoluteY="159dp" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="140dp"
+        android:id="@+id/ManageProfileButton"
+        android:layout_width="160dp"
         android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
         android:text="Manage Profile"
         tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="78dp"
-        android:layout_marginTop="18dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        tools:layout_editor_absoluteY="78dp" />
 </RelativeLayout>

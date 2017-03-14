@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class MainProfileActivity extends AppCompatActivity {
 
-    private EditText DescriptionField;
+    private TextView DescriptionField;
     private TextView NameField;
     private TextView AgeField;
     private TextView LocationField;
@@ -37,7 +37,7 @@ public class MainProfileActivity extends AppCompatActivity {
                     hello = new Intent(MainProfileActivity.this, MainProfileActivity.class);
                     break;
                 case R.id.navigation_dashboard:
-                    hello = new Intent(MainProfileActivity.this, NewUserActivity.class);
+                    hello = new Intent(MainProfileActivity.this, SettingsActivity.class);
                     break;
                 case R.id.navigation_notifications:
                     hello = new Intent(MainProfileActivity.this, ChooseGameActivity.class);
@@ -64,7 +64,7 @@ public class MainProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_profile);
 
         GamesList = (ListView)findViewById(R.id.gameList);
-        DescriptionField = (EditText)findViewById(R.id.DescriptionField);
+        DescriptionField = (TextView) findViewById(R.id.DescriptionField);
         AgeField = (TextView)findViewById(R.id.AgeField);
         NameField = (TextView)findViewById(R.id.nameField);
         LocationField = (TextView)findViewById(R.id.locationField);
